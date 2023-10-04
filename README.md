@@ -2,7 +2,7 @@
 
 - [ProtoType](#ProtoType)
 - [Window](#Window)
-- - [GlobalScope](#GlobalScope)
+  - [GlobalScope](#GlobalScope)
 
   ### ProtoType
   ```js
@@ -46,10 +46,10 @@
 
 
 ### Window
-# In JavaScript, a "window" refers to the global object that represents the web browser's window or tab in which your JavaScript code is running. The window object provides access to various properties and methods that allow you to interact with and control the browser environment. Here are some key aspects of the window object:
+ In JavaScript, a "window" refers to the global object that represents the web browser's window or tab in which your JavaScript code is running. The window object provides access to various properties and methods that allow you to interact with and control the browser environment. Here are some key aspects of the window object:
 
 ### GlobalScope
-# Variables and functions declared in the global scope are attached to the window object. For example, if you declare a variable like var x = 10; at the top level of your JavaScript code, you can access it as window.x or simply x.
+ Variables and functions declared in the global scope are attached to the window object. For example, if you declare a variable like var x = 10; at the top level of your JavaScript code, you can access it as window.x or simply x.
 ```js
 var x = 10;
 console.log(window.x) // the result will be same
