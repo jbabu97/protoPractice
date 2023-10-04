@@ -7,6 +7,13 @@
   - [Timers](#Timers)
   - [LocationInformation](#LocationInformation)
   - [Storage](#Storage)
+- [Function](#FunctionInJavascript)
+  - [DefineAFunction](#DefineAFunction)
+  - [FunctionParameters](#FunctionParameters)
+  - [ReturnInFunction](#ReturnInFunction)
+  - [FunctionExpression](#FunctionExpression)
+  - [AnonymousFunction](#AnonymousFunction)
+  - [ArrowFunctions](#ArrowFunctions)
 
   ### ProtoType
   ```js
@@ -115,6 +122,79 @@ You can use window.localStorage and window.sessionStorage to store data persiste
   localStorage.getItem('karim') // key: string
 
 ```
+
+### FunctionInJavascript
+Functions are the basic building block of JavaScript. Functions allow us to encapsulate a block of code and reuse it multiple times.
+Functions make JavaScript code more readable, organized, reusable, and maintainable.
+
+In JavaScript, a function can be defined using the function keyword, followed by the name of a function and parentheses. Optionally, a list of input parameters can be included within the parentheses. The code block that needs to be executed when the function is called is written within curly braces.
+
+### DefineAFunction
+```js
+function greet(){
+    // alert('This is javascript function');
+};
+greet();
+```
+
+### FunctionParameters
+You can pass values to a function using parameters. A function can have one or more parameters, and the values will be passed by the calling code.
+
+```js
+function greetings(firstName, lastName){
+    console.log(`Hello ${firstName} ${lastName}`);
+};
+greetings('Steve', 'Jobs');
+```
+
+### ReturnInFunction
+A function can return a value to the calling code using the return keyword followed by a variable or a value
+
+```js
+function getNumber() {
+    return 10;
+};
+
+let result = getNumber();
+console.log(result);
+```
+
+### FunctionExpression
+A function expression in JavaScript is a function that is stored as a value, and can be assigned to a variable or passed as an argument to another function.
+
+```js
+let add = function(num1, num2){
+    return num1 + num2;
+};
+
+let addResult = add(97, 5);
+console.log(addResult);
+```
+
+### AnonymousFunction
+In JavaScript, you can also create anonymous functions, which are functions without a name. Anonymous functions are often used as arguments to other functions, and are
+Anonymous functions are typically used in functional programming e.g. callback function, creating closure or immediately invoked function expression.
+
+```js
+let numbers = [2,5, 8, 7, 5];
+
+let squareNumbers = numbers.map(function(number){
+    return number * number;
+});
+
+console.log(squareNumbers);
+```
+
+### ArrowFunctions
+Arrow functions are a shorthand syntax for defining anonymous functions in JavaScript. They have compact syntax compared to anonymous functions.
+
+```js
+let square = num => num * num;
+
+let squareResult = square(97);
+console.log(squareResult);
+```
+
 
 
 
